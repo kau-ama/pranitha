@@ -1,0 +1,212 @@
+import React from "react";
+
+const styles = {
+  container: {
+    fontFamily: "Inter, system-ui, sans-serif",
+    backgroundColor: "#f8f7f4",
+    color: "#1a1a1a",
+  },
+  section: {
+    maxWidth: "1000px",
+    margin: "0 auto",
+    padding: "80px 24px",
+  },
+  heading: {
+    fontSize: "32px",
+    marginBottom: "24px",
+    fontWeight: 600,
+    letterSpacing: "-0.5px",
+  },
+  subtext: {
+    fontSize: "18px",
+    lineHeight: 1.7,
+    color: "#444",
+  },
+  heroTitle: {
+    fontSize: "52px",
+    fontWeight: 600,
+    letterSpacing: "-1px",
+    marginBottom: "20px",
+  },
+  heroText: {
+    fontSize: "20px",
+    color: "#444",
+    maxWidth: "720px",
+    lineHeight: 1.6,
+    marginBottom: "30px",
+  },
+  buttonPrimary: {
+    padding: "12px 20px",
+    backgroundColor: "#0f3d3e",
+    color: "#fff",
+    border: "none",
+    borderRadius: "6px",
+    marginRight: "12px",
+    cursor: "pointer",
+  },
+  buttonSecondary: {
+    padding: "12px 20px",
+    border: "1px solid #ccc",
+    background: "transparent",
+    borderRadius: "6px",
+    cursor: "pointer",
+  },
+  divider: {
+    height: "1px",
+    background: "#e5e5e5",
+    marginTop: "40px",
+  },
+};
+
+const Section = ({ title, children }) => (
+  <section style={styles.section}>
+    <h2 style={styles.heading}>{title}</h2>
+    <div style={styles.subtext}>{children}</div>
+  </section>
+);
+
+export default function Index() {
+  return (
+    <div style={styles.container}>
+
+      {/* HERO */}
+      <section style={{ ...styles.section, paddingTop: "120px" }}>
+        <h1 style={styles.heroTitle}>
+          I turn financial complexity into strategic business decisions.
+        </h1>
+        <p style={styles.heroText}>
+          Global finance leader with 20+ years across AI, SaaS, and manufacturing—driving capital strategy,
+          operational performance, and scalable growth through disciplined FP&A and data-driven insights.
+        </p>
+
+        <div>
+          <button style={styles.buttonPrimary}>View Experience</button>
+          <button style={styles.buttonSecondary}>Let’s Connect</button>
+        </div>
+
+        <div style={styles.divider}></div>
+      </section>
+
+      {/* ABOUT */}
+      <Section title="Executive Profile">
+        <p>
+          I operate at the intersection of finance, operations, and strategy—partnering with executive teams to
+          translate complex technical and business environments into clear financial direction.
+        </p>
+        <br />
+        <p>
+          Across AI-native startups, SaaS platforms, and global manufacturing organizations, I have led FP&A,
+          supply chain finance, and enterprise planning functions to improve visibility, strengthen decision-making,
+          and enable scalable growth.
+        </p>
+        <br />
+        <p>
+          My approach combines analytical rigor with business judgment—ensuring finance actively shapes outcomes,
+          not just reports them.
+        </p>
+      </Section>
+
+      {/* IMPACT */}
+      <Section title="Selected Impact">
+        <ul style={{ paddingLeft: "20px" }}>
+          <li>Delivered 14%+ margin expansion through pricing strategy and cost discipline</li>
+          <li>Reduced financial close cycle from 30 days to 10 days</li>
+          <li>Improved operational cycle times by 18–25%</li>
+          <li>Managed $100M+ in capital investments</li>
+          <li>Achieved 100% SOX compliance during rapid scale</li>
+          <li>Improved procurement efficiency by 15%</li>
+        </ul>
+      </Section>
+
+      {/* EXPERIENCE */}
+      <Section title="Experience">
+
+        <div style={{ marginBottom: "40px" }}>
+          <strong>Posa Superlative Labs — Global CFO (2025–Present)</strong>
+          <p>Leading financial strategy in an AI-native environment, aligning capital allocation and product economics.</p>
+        </div>
+
+        <div style={{ marginBottom: "40px" }}>
+          <strong>SparkMeter — VP Finance & Supply Chain (2023–2025)</strong>
+          <p>Led finance, revenue operations, and supply chain strategy across SaaS and hardware operations.</p>
+        </div>
+
+        <div style={{ marginBottom: "40px" }}>
+          <strong>Prime Roots — Controller (2023)</strong>
+          <p>Built FP&A infrastructure and improved EBITDA and operational visibility.</p>
+        </div>
+
+        <div style={{ marginBottom: "40px" }}>
+          <strong>Monarch Tractor — Sr Director Finance (2021–2022)</strong>
+          <p>Implemented ERP systems and improved procurement efficiency.</p>
+        </div>
+
+        <div>
+          <strong>Sanovo — CFO (2016–2018)</strong>
+          <p>Led financial strategy including a $100M business plan.</p>
+        </div>
+
+      </Section>
+
+      {/* CASE STUDIES */}
+      <Section title="Selected Work">
+
+        <div style={{ marginBottom: "30px" }}>
+          <strong>FP&A Transformation</strong>
+          <p><b>Challenge:</b> Limited visibility into key financial drivers</p>
+          <p><b>Action:</b> Built driver-based forecasting models</p>
+          <p><b>Outcome:</b> Improved planning accuracy and decision-making speed</p>
+        </div>
+
+        <div>
+          <strong>Cost Optimization</strong>
+          <p><b>Challenge:</b> Rising operational costs</p>
+          <p><b>Action:</b> Implemented cost discipline and supplier strategy</p>
+          <p><b>Outcome:</b> Improved margins and cost efficiency</p>
+        </div>
+
+      </Section>
+
+      {/* CAPABILITIES */}
+      <Section title="Capabilities">
+        <p>
+          FP&A & Strategic Planning • Corporate Finance • Operations & Supply Chain Finance • Business Partnering •
+          Financial Modeling • Systems Transformation • AI-Enabled Decision Support
+        </p>
+      </Section>
+
+      {/* TOOLS */}
+      <Section title="Systems & Tools">
+        <p>SAP • NetSuite • Salesforce • Coupa • Power BI • Advanced Excel</p>
+      </Section>
+
+      {/* EDUCATION */}
+      <Section title="Education">
+        <p>Columbia Business School</p>
+        <p>MBA — Bharathiar University</p>
+        <p>AI Certifications</p>
+      </Section>
+
+      {/* PHILOSOPHY */}
+      <Section title="Leadership Approach">
+        <p>
+          Finance should enable better decisions, not just report outcomes. I build systems that create clarity,
+          accountability, and speed across organizations.
+        </p>
+        <br />
+        <p>
+          I believe the future of finance lies in combining disciplined financial frameworks with AI-driven insights
+          to improve precision and scalability.
+        </p>
+      </Section>
+
+      {/* CONTACT */}
+      <Section title="Contact">
+        <p>Let’s connect to discuss finance leadership, transformation, and growth.</p>
+        <p><b>Email:</b> pravindran@yahoo.com</p>
+        <p><b>LinkedIn:</b> linkedin.com/in/pranithakurup</p>
+      </Section>
+
+    </div>
+  );
+}
