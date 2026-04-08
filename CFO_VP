@@ -203,7 +203,7 @@ export default function Index() {
       {/* CONTACT */}
       <Section title="Contact">
         <p>Let’s connect to discuss finance leadership, transformation, and growth.</p>
-        <p><b>Email:</b> pravindran@yahoo.com</p>
+        <p><b>Email:</b> anitasap@gmail.com</p>
         <p><b>LinkedIn:</b> linkedin.com/in/pranithakurup</p>
       </Section>
 
